@@ -1,0 +1,442 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ge",
+				"generatePassword"
+			],
+			[
+				"get",
+				"getElement"
+			],
+			[
+				"se",
+				"setElementText"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"hi",
+				"hideById"
+			],
+			[
+				"pla",
+				"playInfo"
+			],
+			[
+				"sh",
+				"showById"
+			],
+			[
+				"e",
+				"elementId"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"va",
+				"value"
+			],
+			[
+				"co",
+				"condition"
+			],
+			[
+				"bu",
+				"button1"
+			],
+			[
+				"font-",
+				"font-size\tproperty"
+			],
+			[
+				"onC",
+				"onclick\tAttr"
+			],
+			[
+				"paddin",
+				"padding-bottom\tproperty"
+			],
+			[
+				"p",
+				"padding\tproperty"
+			],
+			[
+				"set",
+				"setElementTextById"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"le",
+				"length"
+			],
+			[
+				"ele",
+				"element"
+			],
+			[
+				"hid",
+				"hideElement"
+			],
+			[
+				"s",
+				"setElementText"
+			],
+			[
+				"sho",
+				"showById"
+			],
+			[
+				"pl",
+				"play"
+			],
+			[
+				"u",
+				"upperBoundOfRange"
+			],
+			[
+				"a",
+				"alert"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"eho",
+				"echo\techo \"…\""
+			],
+			[
+				"us",
+				"userAnswer"
+			],
+			[
+				"user",
+				"userAnswer1"
+			],
+			[
+				"for",
+				"form\tTag"
+			],
+			[
+				"l",
+				"level"
+			],
+			[
+				"m",
+				"movingOn"
+			],
+			[
+				"у",
+				"указательный"
+			],
+			[
+				"с",
+				"средний"
+			],
+			[
+				"ra",
+				"range"
+			],
+			[
+				"f",
+				"fun\tFunction"
+			],
+			[
+				"i",
+				"incorrectlyMessage"
+			],
+			[
+				"cu",
+				"currentPlayer"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "",
+			"file": "/C/Users/sklyarenko.SKPARI/Desktop/обучение/sublimeText3 test plagins/html.html",
+			"file_size": 0,
+			"file_write_time": 132391784303233705,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "",
+			"file": "/C/Users/sklyarenko.SKPARI/Desktop/обучение/sublimeText3 test plagins/js.js",
+			"file_size": 0,
+			"file_write_time": 132391784693655322,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 157.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/HTMLCSS. Интерактивный курс/Основные понятия в веб-разработке"
+	],
+	"file_history":
+	[
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/HTMLCSS. Интерактивный курс/Основные понятия в веб-разработке/index.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/HTMLCSS. Интерактивный курс/Основные понятия в веб-разработке/html.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/HTMLCSS. Интерактивный курс/Основные понятия в веб-разработке/lesson.sublime-project",
+		"/C/Users/sklyarenko.SKPARI/js.js",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/password-generator.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/riddles.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/index.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/guess.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/puzzle.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/style.css",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/menu.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/training.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/footer.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/guessPlay.php",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/guess.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/puzzle.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/обучение/my_site/index.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/3_2.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/3_3.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/3_1.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/typing.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/puzzles.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/проверить/funcArray.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/riddles.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/guess.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/training.html",
+		"/C/Users/sklyarenko.SKPARI/Desktop/function.html",
+		"/C/Users/SKLYAR~1.SKP/AppData/Local/Temp/Rar$DRa17228.34929/bankProgramme.html"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"Поставьте мизинец левой руки на букву Ф, безымянный палец — на Ы, средний — на В, указательный — на А. "
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "/C/Users/sklyarenko.SKPARI/Desktop/обучение/sublimeText3 test plagins/html.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "/C/Users/sklyarenko.SKPARI/Desktop/обучение/sublimeText3 test plagins/js.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"git_gutter_is_enabled": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "lesson.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 357.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
