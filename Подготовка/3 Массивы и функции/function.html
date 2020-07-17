@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Функции</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			/**
+			a. Написать функцию, которая принимает в качестве параметра число n. Результатом работы функции является массив из N элементов со значениями 1, 2, 3… n.
+			*/
+			let size = 6;
+			document.write(
+				"Задание: a. Написать функцию, которая принимает в качестве параметра число n. Результатом работы функции является массив из N элементов со значениями 1, 2, 3… n."+
+				" В качестве N передано значение " + size + "<br>"
+			);
+			let array = getArray(size);
+			for (var i = 0; i < array.length; i++) 
+				document.write(i + " (this is index) - элемент массива: " + array[i] + "<br>");
+
+			function getArray(size) 
+			{
+				let array = [];
+				for (var i = 1; i <= size; i++) 
+					array.push(i);
+				return array;
+			}
+
+			/**
+			b. Написать функцию, которая принимает массив чисел. Результатом работы функции является сумма чисел этого массива.
+			*/
+			array = [1, 2, 3, 4, "ой, случайно добавила строку а не число", 6];
+			document.write(
+				"<br><br>Задание: b. Написать функцию, которая принимает массив чисел. Результатом работы функции является сумма чисел этого массива."+
+				" В качестве массива чисел передано значение " + array + "<br>"
+			);
+			document.write("Результат: " + getSum(array));
+			function getSum(numbersArray) 
+			{
+				let sum = 0;
+				let number;
+				for (var i = 0; i < numbersArray.length; i++) 
+				{
+					number = numbersArray[i];
+					if(isNaN(number))
+						continue;
+					document.write(sum + " + " + number + " = " );
+					sum += number;
+					document.write(sum + "<br>" );
+				}
+				return sum;
+			}
+			/**
+			c. Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает максимальное число.
+			*/
+			array = [1, 3, 3, 46, "ой, случайно добавила строку а не число", 6, 18];
+			document.write(
+				"<br><br>Задание: Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает максимальное число."+
+				" В качестве массива чисел передано значение " + array + "<br>"
+			);
+			document.write("Результат: " + getMax(array));
+			function getMax(numbersArray) 
+			{
+				let max = 0;
+				let currentValue;
+				for (var i = 0; i < numbersArray.length; i++) 
+				{
+					currentValue = numbersArray[i];
+					if(isNaN(currentValue))
+						continue;
+					if(max < currentValue)
+						max = currentValue;
+					
+				}
+				return max;
+			}
+			/**
+			d. Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает минимальное число.
+			*/
+			array = [10, -9, 12, 5, "ой, случайно добавила строку а не число", 8, -4];
+			document.write(
+				"<br><br>Задание: d. Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает минимальное число."+
+				" В качестве массива чисел передано значение " + array + "<br>"
+			);
+			document.write("Результат: " + getMin(array));
+			function getMin(numbersArray) 
+			{
+				let min = 0;
+				let currentValue;
+				for (var i = 0; i < numbersArray.length; i++) 
+				{
+					currentValue = numbersArray[i];
+					if(isNaN(currentValue))
+						continue;
+					if(min > currentValue)
+						min = currentValue;
+					
+				}
+				return min;
+			}
+			/**
+			f. Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает только четные числа из этого массива. Чтобы определить четность числа, воспользуйтесь оператором для подсчета остатка от деления: x % 2. Если остаток от деления числа на 2 равен 0, число будет четное.
+			*/
+			array = [10, "ой, случайно добавила строку а не число", 8, -4, -18, 0, 77];
+			document.write(
+				"<br><br>Задание: d. Написать функцию, которая на вход получает массив целых чисел, и в качестве результата возвращает минимальное число."+
+				" В качестве массива чисел передано значение " + array + "<br> Примичание, я не в курсе 0 четное число или нет, но поделив его на 2 остатка нет, потому он остается в результате.<br>"
+			);
+			document.write("Результат: " + onlyEvenNumber(array));
+			function onlyEvenNumber(numbersArray) 
+			{
+				let array = [];
+				let currentValue;
+				for (var i = 0; i < numbersArray.length; i++) 
+				{
+					currentValue = numbersArray[i];
+					if(isNaN(currentValue))
+						continue;
+					if(currentValue % 2 == 0)
+						array.push(currentValue);
+				}
+				return array;
+			}
+		</script>
+	</body>
+</html>

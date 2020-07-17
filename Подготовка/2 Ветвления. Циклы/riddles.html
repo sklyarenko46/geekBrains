@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Игра в загадки</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			/* 
+				a. Загадать загадку. Если ответ верен – поздравить пользователя. Затем сообщить, что игра окончена.
+				b. Если ответ неверный – написать пользователю, что он не угадал.
+				c. Добавить еще 3 загадки. Подсчитать количество правильных ответов, сообщить пользователю.
+				d. (По желанию). В качестве верного ответа принимать несколько вариантов ответов. Например, «Стул», «стул», «табуретка» и так далее.
+			*/
+
+			var riddles = [
+				{question: "Загадка №1. \nЗимой и летом одним цветом?", answers: ["елка", "ёлка", "ель", "еловые", "хвойные"]},
+				{question: "Загадка №2. \nСидит дед в сто шуб одет?",   answers: ["лук", "капуста", "луковица", "луковка", "качан"]}, 
+				{question: "Загадка №3. \nЛучший друг кракадила гены?", answers: ["чебуратор", "чебурашка", "чебурашечка", "чебуразойд"]}
+			];
+
+			alert(
+				"Вас приветствует игра в загадки. " +
+				"В процессе игры вам нужно будет отгадать " + riddles.length + " загадки. " +
+				"У вас будет только одна попытка правельно ответить на каждый вопрос." 
+			);
+			
+
+			var numberOfCorrectUserAnswers = 0;
+			var userAnswer;
+
+ 			for(let riddle of riddles)
+ 			{
+ 				userAnswer = makeRidle(riddle.question);
+ 				document.write("Вопрос: <b>" + riddle.question + "</b>. Ваш ответ: <b>" + userAnswer + "</b>. Допустимые значения: <b>" + riddle.answers + "</b><br>");
+
+ 				if(userAnswerIsCorrect(riddle.answers))
+				{
+					numberOfCorrectUserAnswers++;
+					alert("Ответ корректный.");
+				}
+ 				else
+ 					alert("Вы не угадали.");
+ 			}	
+
+			document.write("<br><br>Правельных ответов: <b>" + numberOfCorrectUserAnswers +"</b> из <b>" + riddles.length + "</b>. Спасибо за игру!");
+
+			
+			function makeRidle(questionText) 
+			{
+				return prompt(questionText).trim().toLowerCase();
+			}
+
+			function userAnswerIsCorrect(answers) 
+			{
+				for(let variant of answers)
+					if(compareAnswers(variant))
+						return true;
+
+				return false;
+			}
+		
+			function compareAnswers(variant) 
+			{
+				let differenceInLength = Math.abs(variant.length - userAnswer.length);
+				
+				return  userAnswer == variant || (//если две строки равны или
+							differenceInLength <= 1 && //имеют небольшую разницу в длине и
+							(variant.includes(userAnswer) || userAnswer.includes(variant))//одна из строк включает в себя другую
+						);
+			}
+		
+		</script>
+	</body>
+</html>
+

@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Банковская программа</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			/**
+			Пользователь вводит сумму вклада и процент, который будет начисляться ежегодно. 
+			Отобразить размер вклада поочередно на ближайшие 5 лет.
+			*/
+
+			var timeOfDeposit = 5;
+			alert(
+				"Вас приветствует Банковская программа. " +
+				"Понадобится ввести сумму вклада и годовой процент, после чего " +
+				"программа расчитает вашу прибыль за " + timeOfDeposit + " лет." 
+			);
+		
+			var amountOfDeposit = dataEntry("Введите сумму вклада:");
+			var annualInterest = dataEntry("Введите годовой процент:");
+			var scale = 2;
+
+			document.write("Ваш вклад = " + format(amountOfDeposit) + ". Процентная ставка = " + format(annualInterest) + "%.<br><br>");
+
+			var profitForYear;
+			var totalProfit = 0;
+
+			for(let i = 1; i <= timeOfDeposit; i++)
+			{
+				profitForYear = amountOfDeposit / 100 * annualInterest;
+				amountOfDeposit += profitForYear;
+				totalProfit+=profitForYear;
+				document.write(
+					"Доход на " + i + " год = " + format(profitForYear) + 
+					". Текущая сумма на вкладе " + format(amountOfDeposit) + ".<br>"
+				);
+			}
+
+			document.write(
+				"<br><br>Доход за " + timeOfDeposit + " лет = " + format(totalProfit) + 
+				". Всего на вкладе по истечени срока будет: " + format(amountOfDeposit) + "!"
+			);
+			
+			function dataEntry(text) 
+			{
+				var inputValue;
+				do
+				{
+					inputValue = +prompt(
+						"Для корректной работы программы необходимо вводить только числовые значения, они должны быть положительными. " +
+						"Запрос на ввод будет повторятся пока введенное значение не окажется числом.\n\n" + text
+					);
+				}
+				while(isNaN(inputValue) || inputValue <= 0)
+
+				return inputValue;
+			}
+
+			function format(digit) 
+			{
+				return digit.toFixed(2).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+			}
+
+		</script>
+	</body>
+</html>
+

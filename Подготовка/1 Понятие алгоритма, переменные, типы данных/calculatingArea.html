@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+
+	/**
+	Пользователь вводит длину оснований трапеции (a и b), а также высоту трапеции h. 
+	Программа выводит сообщение: «Площадь трапеции будет равна <значение>». 
+	Площадь вычисляется по формуле ((a + b) / 2) * h, где a, b - основания, h - высота. 
+	*/
+	
+	var header = "ПОДСЧЕТ ПЛОЩАДИ ТРАПЕЦИИ.\n\n";
+	var nanErrorMessage = "Введенное значение не является числом.";
+	
+	var inputValueOfUpperBase = +prompt(header + "Введите длину верхнего основания:");
+	if(isNaN(inputValueOfUpperBase))
+		alert(nanErrorMessage);
+	else
+	{
+		var inputValueOfLowerBase = +prompt(header + "Введите длину нижнего основания:");
+		if(isNaN(inputValueOfLowerBase))
+			alert(nanErrorMessage);
+		else
+		{
+			var inputValueOfHeight = +prompt(header + "Введите высоту:");
+			if(isNaN(inputValueOfHeight))
+				alert(nanErrorMessage);
+			else
+				alert(
+					"Площадь трапеции будет равна " +  calculate(inputValueOfUpperBase, inputValueOfLowerBase, inputValueOfHeight) + "."
+				);
+		}
+	}
+	
+	function calculate(upperBase, lowerBase, height) 
+	{
+	  return ((upperBase + lowerBase) / 2) * height;
+	}
+
+</script>

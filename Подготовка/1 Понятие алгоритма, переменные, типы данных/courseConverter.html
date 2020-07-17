@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<script>
+
+	/**
+	Программа хранит в двух переменных курс доллара и евро. 
+	В первой переменной у вас хранится стоимость одного евро в рублях, во второй - стоимость одного доллара в рублях.
+	Вы спрашиваете у пользователя, сколько рублей он хочет сконвертировать, получаете это число и считаете. 
+	Результат надо вывести на страницу с помощью alert.
+	*/
+	
+	
+	let courseEuro = 78.29;
+	let courseUSD = 69.78;
+	
+	var inputValueOfRubles = +prompt("КОНВЕРТЕР ВАЛЮТ.\n\nВведите конвертируемую сумму(рубли):");
+	
+	if(isNaN(inputValueOfRubles))
+		alert("Введенное значение не является числом.");
+	else
+	{
+		alert(
+			"На дату 27.06.2020 г. \n\n" + 
+			collectResult(inputValueOfRubles,courseEuro, "€") + 
+			collectResult(inputValueOfRubles,courseUSD, "$") 
+		);
+		
+		function collectResult(rubles, course, currencySign) 
+		{
+		  return rubles + " руб. = " + calculate(rubles,course) + " " + currencySign + 
+				 " (1 " + currencySign + " равен " + course + " руб.)\n";
+		}
+		function calculate(rubles,course) 
+		{
+		  return (rubles / course).toFixed(4);
+		}
+	}
+	
+</script>

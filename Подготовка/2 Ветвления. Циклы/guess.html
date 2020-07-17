@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Угадайка</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			
+			/**(задание по желанию)
+			Сделать игру с двумя игроками и бесконечным числом попыток.
+			Сделайте возможность выйти из игры по желанию одного из игроков.
+			*/
+			
+			
+			var lowerBoundOfRange = 1;
+			var upperBoundOfRange = 10;
+
+			alert(
+				"Вас приветствует игра угадай число. " +
+				"Два игрока поочередно будут пытаться угадать число загаданное случайным образом в диапозоне от " +
+				 lowerBoundOfRange + " до " + upperBoundOfRange + " включительно."
+			);
+
+			var correctAnswer = Math.trunc(lowerBoundOfRange + Math.random() * (upperBoundOfRange - lowerBoundOfRange));
+			
+			var firstPlayer = "Игрок №1";
+			var secondPlayer = "Игрок №2";
+			
+			
+			var currentPlayer = firstPlayer;
+			var currentPlayerResponse;
+
+			while(true)
+			{
+				currentPlayerResponse = +prompt(
+					"Для досточного завершения игры введите любой не числовой символ(например букву). \n\n" + 
+					currentPlayer + ". Угадайте число от " + lowerBoundOfRange + " до " + upperBoundOfRange + "."
+				);
+				
+				if(isNaN(currentPlayerResponse))
+				{
+					document.write("Игрок \'" + currentPlayer + "\' завершил игру! Было загаданно число: " + correctAnswer + ".");
+					break;
+				}
+				if(currentPlayerResponse < lowerBoundOfRange || currentPlayerResponse > upperBoundOfRange)
+				{
+					alert("\'" + currentPlayer +"\' введите пожалуйста число не менее " + lowerBoundOfRange + " и не более " + upperBoundOfRange + "!");
+					continue;
+				}
+				
+				if(currentPlayerResponse > correctAnswer)
+					alert("Загаданное число меньше чем " + currentPlayerResponse + ", очередь следующего игрока.");
+				else if(currentPlayerResponse < correctAnswer)
+					alert("Загаданное число больше чем " + currentPlayerResponse + ", очередь следующего игрока.");
+				else
+				{
+					document.write("Верно " + currentPlayerResponse +", поздравляем вы угадали! \nВыиграл игрок: \'" + currentPlayer + "\'!");
+					break;
+				}	
+
+
+				if(currentPlayer == secondPlayer)
+					currentPlayer = firstPlayer;
+				else
+					currentPlayer = secondPlayer;
+			} 
+			
+		</script>
+	</body>
+</html>
+
