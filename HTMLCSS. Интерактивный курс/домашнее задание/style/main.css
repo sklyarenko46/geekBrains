@@ -3,28 +3,70 @@ body
 	background: #f8f8f8;
 }
 
+.header
+{
+	color: #463F3F;
+	height: 45px;  
+	font-size: 65px;
+	text-align: center; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.helloMessage
+{
+	font-size: 30px;
+	text-align: center;
+	color: #463F3F;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.helloMessage img
+{
+	width: 30px;
+	background: #f8f8f8; 
+}
+
 .menu
 {
 	text-align: center; 
+	padding-top: 20px;
 }
 .menu a
 {
-	color: #B1B1B1;
-	background: url(../images/page-background.jpg) no-repeat; 
-	background-size: 100% 100%;  
+	color: #463F3F;
 	text-decoration: none;
-	border-left: 3px solid #B1B1B1;  
-	border-right: 3px solid #B1B1B1; 
-	border-bottom: 1px solid #B1B1B1;
-	border-bottom-left-radius: 22px;
-	border-bottom-right-radius: 22px;
-	width: 30%; 
-	height: 45px;  
-	font-size: 30px;
+	border-left: 4px solid #463F3F;  
+	border-right: 4px solid #463F3F; 
+	border-bottom: 1px solid #463F3F;
+	border-top: 1px solid #463F3F;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 60px;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 60px;
+	background-color: #E0E0E0; 
+	font-size: 35px;
 	list-style-type: none;
-	text-align: center; 
-	padding-top: 25px; 
-	padding-bottom: 30px; 
+	padding-top: 5px; 
+	padding-bottom: 5px; 
 	padding-right: 5%;
 	padding-left: 5%;  
+}
+
+.footer
+{
+	text-align: center;
+	background-color: #5E5E5E;
+	padding-top: 20px; 
+	padding-bottom: 20px; 
+	width: 100%;
+	position: fixed;  
+	bottom : 0; 
+	font-size: 14px;
+}
+
+.footer a
+{
+	text-decoration: none;
 }
