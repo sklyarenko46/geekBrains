@@ -7,39 +7,36 @@
 </head>
 <body>
 	<p class="menu">
-		<a href="../index.html">Главная</a>
-		<a href="products.html">Каталог</a>
-		<a href="../contacts.html">Контакты</a>
+		<a class="button" href="../index.html">Главная</a>
+		<a class="button" href="products.html">Каталог</a>
+		<a class="button" href="../contacts.html">Контакты</a>
 	</p>
 	<h1 class="header">Каталог</h1>
 	<h3>Список товаров:</h3>
-	<ol>
-		<li>
-			<img 
-			href="itemFine.html" 
-			src="../images/fine.jpg" 
-			alt="fine" 
-			style="width: 80px"
-			onmouseover="this.style.width='800px'" 
-			onmouseout="this.style.width='80px'"
-			>
-			 Веселая картинка - &laquo;Как дела?&raquo;,
-			<a href="itemFine.html">подробнее &rarr;</a>
-		</li>
-		<li>
-			<img 
-			href="itemHelsing.html" 
-			src="../images/hellsing.jpg" 
-			alt="fine" 
-			style="width: 80px"
-			onmouseover="this.style.width='800px'" 
-			onmouseout="this.style.width='80px'"
-			>
-			 Для ценителей анимэ  - &laquo;Ван Хельсинг&raquo;,
-			<a href="itemHelsing.html">подробнее &rarr;</a>
-		</li>
-	</ol>
-	<hr>
+	<table class="productTable">
+		<tr>
+			<th>
+				Для ценителей анимэ  - &laquo;Ван Хельсинг&raquo;
+			</th>
+			<th>
+				<img href="itemHelsing.html" src="../images/hellsing.jpg" alt="hellsing">
+			</th>
+			<th>
+				<a class="button" href="itemHelsing.html">подробнее</a>
+			</th>
+		</tr>
+			<tr>
+			<th>
+				Веселая картинка - &laquo;Как дела?&raquo;
+			</th>
+			<th>
+				<img href="itemFine.html" src="../images/fine.jpg" alt="fine">
+			</th>
+			<th>
+				<a class="button" href="itemFine.html">подробнее</a>
+			</th>
+		</tr>
+	</table>
 	<p class="footer">
 		Все права защищены <b>Copyright &copy; Sklyarenko Nataliya</b>, при содействии:
 		<a href="https:\\geekbrains.ru" target="_blank">GeekBrains</a>

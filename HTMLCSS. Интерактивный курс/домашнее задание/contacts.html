@@ -7,29 +7,35 @@
 </head>
 <body>
 	<p class="menu">
-		<a href="index.html">Главная</a>
-		<a href="catalog/products.html">Каталог</a>
-		<a href="contacts.html">Контакты</a>
+		<a class="button" href="index.html">Главная</a>
+		<a class="button" href="catalog/products.html">Каталог</a>
+		<a class="button" href="contacts.html">Контакты</a>
 	</p>
 	<h1 class="header">Контакты</h1>
-	<h2>Форма обратной связи.</h2>
-	<form name="feedbackForm">
-		<p><input class="input" name="name" ENGINE="text" style="width:15%" /> Ваше имя*</p>
-		<p><input class="input" name="email" type="text" style="width:15%" /> Электронная почта*</p>
-		<p><input class="input" name="sub" type="text" style="width:15%" /> Тема сообщения</p>
-		<p>
-			Текст сообщения:<br>
-			<textarea name="body" cols="1" rows="5" style="width:30%" /></textarea>
-		</p>
-		<p><input id="submit" value="Отправить" type="submit" /></p>
-	</form>
-	<form class="contactsForm">
-		<p>Адрес: <i>г.Несуществующий, ул. Придуманная, д.123, стр.1, к.2, эт.3, каб.40.</i></p>
-		<p>Телефон: <i>+16 (8776) 334-45</i></p>
-		<p>Email: <i>info@kartino4ka.com</i></p>
-		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae786090a3de2c69963d543adb4d06799715fb475d3153d85e8149c0780ad259e&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true">
-		</script>
-	</form>
+	<table class="contactsTable">
+			<tr>
+				<th class="feedback">
+					<h2>Форма обратной связи</h2>
+					<form>
+						<p>Ваше имя*<br><input class="input" name="name" ENGINE="text"/></p>
+						<p>Электронная почта*<br><input class="input" name="email" type="text"/></p>
+						<p>Тема сообщения<br><input class="input" name="sub" type="text"/></p>
+						<p>Текст сообщения:<br><textarea name="body"/></textarea></p>
+						<input class="button" id="submit" value="Отправить" type="submit" />
+						<input class="button" id="reset" value="Отмена" type="reset" />
+					</form>	
+				</th>
+				<th class="map">
+					<p>Адрес: <i>г.Несуществующий, ул. Придуманная, д.123, стр.1, к.2, эт.3, каб.40.</i></p>
+					<p>Телефон: <i>+16 (8776) 334-45</i></p>
+					<p>Email: <i>info@kartino4ka.com</i></p>
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ae786090a3de2c69963d543adb4d06799715fb475d3153d85e8149c0780ad259e&amp;width=100%&amp;height=400px&amp;lang=ru_RU&amp;scroll=true">
+					</script>
+				</th>
+			</tr>
+	</table>
+	
+	
 	
 	<p class="footer">
 		Все права защищены <b>Copyright &copy; Sklyarenko Nataliya</b>, при содействии:
