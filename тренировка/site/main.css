@@ -1,0 +1,27 @@
+.container
+{
+	width: 1200px;
+	height: 600px;
+	margin: 0 auto;
+	background: skyblue;
+	padding-top:100px;
+}
+
+.header
+{
+	width: 900px;
+	height: 300px;
+	background: yellow;
+	padding-top:100px;
+}
+
+.cell
+{
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	border: 2px solid red;
+}
+
+
+             

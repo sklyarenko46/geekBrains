@@ -6,42 +6,89 @@
 	<link rel="stylesheet" type="text/css" href="../style/main.css">
 </head>
 <body>
-	<p class="menu">
-		<a class="button" href="../index.html">Главная</a>
-		<a class="button" class="button" href="products.html">Каталог</a>
-		<a class="button" href="../contacts.html">Контакты</a>
-	</p>
-	<h1 class="header">Картинка:</h1>
-	<a class="product" href="../images/fine.jpg" target="_blank"><img src="../images/fine.jpg" alt="fine"></a>
-	<h3>Цена:</h3>
-	<p>100 рублей</p>
-	<h3 class="shortDescription">Краткое описание:</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus dolores temporibus in qui ut obcaecati rem, nobis atque quos tempore illo dolor illum est nesciunt, soluta deserunt? Cupiditate explicabo quod quae nihil error delectus voluptatum deserunt voluptatibus modi libero?</p>
-	<h3>Характеристики:</h3>
-	<ul class="specifications">
-		<li>Lorem ipsum dolor.</li>
-		<li>Lorem.
-			<ul class="innerSpecifications">
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos.</li>
-			</ul>
-		</li>
-		<li>Lorem ipsum.</li>
-		<li>Lorem ipsum dolor sit amet, consectetur.
-			<ul class="innerSpecifications">
-				<li>Lorem ipsum dolor sit amet.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos.</li>
-				<li>Lorem ipsum dolor.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ut eveniet at ab.</li>
-			</ul>
-		</li>
-	</ul>
-	<h3 class="fullDescription">Подробное описание:</h3>
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum alias nemo totam corporis quisquam. Quasi at unde necessitatibus tenetur mollitia officiis laudantium dolore ipsa quaerat temporibus nulla placeat eos praesentium animi, laboriosam maiores. Doloremque saepe dolorem, laudantium rem necessitatibus fugiat porro enim ad iusto modi, quisquam soluta ab fuga quas voluptatibus fugit earum! Deserunt, perspiciatis hic magni consequuntur officiis nesciunt, modi dignissimos sed aperiam explicabo praesentium voluptatem! Nobis, quos exercitationem aspernatur similique, ipsam animi enim repudiandae nisi voluptatibus quibusdam id quasi iusto ullam doloribus eaque laboriosam alias vitae facere vero dolor eveniet ad voluptas nemo dicta. Fugiat esse architecto, velit.</p>
-	
-	<p class="footer">
+	<div class="menu">
+		<table>
+			<thead>
+				<tr>
+					<th><img src="../images/logo.png" alt="logo"></th> 
+					<th><a class="button" href="../index.html">Главная</a></th>
+					<th><a class="button" href="products.html">Каталог</a></th>
+					<th><a class="button" href="../contacts.html">Контакты</a></th>
+				</tr>
+			</thead>	
+		</table>
+	</div>
+	<div class="itemContent">
+		<a class="productImage" href="../images/fine.jpg" target="_blank"><img src="../images/fine.jpg" alt="fine"></a>
+		<h3>Краткое описание:</h3>
+		<p class="shortDescriptionText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id natus dolores temporibus in qui ut obcaecati rem, nobis atque quos tempore illo dolor illum est nesciunt, soluta deserunt? Cupiditate explicabo quod quae nihil error delectus voluptatum deserunt voluptatibus modi libero?</p>
+		<h3>Характеристики:</h3>
+		<table class="technicalParametersTable">
+			<thead class="tableHeader">
+				<tr>
+					<th colspan="6">Доступные варианты для покупки</th>
+				</tr>
+				<tr>
+					<th>№(артикул)</th>
+					<th>ширина(пиксели)</th>
+					<th>высота(пиксели)</th>
+					<th>расширение(пиксели)</th>
+					<th>размер(КБ)</th>
+					<th>цена(рубли)</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>22f</td>
+					<td>900</td>
+					<td>380</td>
+					<td>2560 &#10006; 1080</td>
+					<td>198</td>
+					<td>300</td>
+				</tr>
+				<tr>
+					<td>22d</td>
+					<td>800</td>
+					<td>280</td>
+					<td>2360 &#10006; 980</td>
+					<td>168</td>
+					<td>200</td>
+				</tr>
+				<tr>
+					<td>22g</td>
+					<td>700</td>
+					<td>180</td>
+					<td>2160 &#10006; 880</td>
+					<td>108</td>
+					<td>100</td>
+				</tr>
+			</tbody>
+		</table>
+		
+		<ul class="specifications">
+			<li>Lorem ipsum dolor.</li>
+			<li>Lorem.
+				<ul class="innerSpecifications">
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos.</li>
+				</ul>
+			</li>
+			<li>Lorem ipsum.</li>
+			<li>Lorem ipsum dolor sit amet, consectetur.
+				<ul class="innerSpecifications">
+					<li>Lorem ipsum dolor sit amet.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos.</li>
+					<li>Lorem ipsum dolor.</li>
+					<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ut eveniet at ab.</li>
+				</ul>
+			</li>
+		</ul>
+		<h3 class="fullDescription">Подробное описание:</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum alias nemo totam corporis quisquam. Quasi at unde necessitatibus tenetur mollitia officiis laudantium dolore ipsa quaerat temporibus nulla placeat eos praesentium animi, laboriosam maiores. Doloremque saepe dolorem, laudantium rem necessitatibus fugiat porro enim ad iusto modi, quisquam soluta ab fuga quas voluptatibus fugit earum! Deserunt, perspiciatis hic magni consequuntur officiis nesciunt, modi dignissimos sed aperiam explicabo praesentium voluptatem! Nobis, quos exercitationem aspernatur similique, ipsam animi enim repudiandae nisi voluptatibus quibusdam id quasi iusto ullam doloribus eaque laboriosam alias vitae facere vero dolor eveniet ad voluptas nemo dicta. Fugiat esse architecto, velit.</p>
+	</div>
+	<div class="footer">
 		Все права защищены <b>Copyright &copy; Sklyarenko Nataliya</b>, при содействии:
 		<a href="https:\\geekbrains.ru" target="_blank">GeekBrains</a>
-	</p>
+	</div>
 </body>
 </html>

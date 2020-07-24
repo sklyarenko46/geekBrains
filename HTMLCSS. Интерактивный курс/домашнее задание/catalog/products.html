@@ -6,40 +6,55 @@
 	<link rel="stylesheet" type="text/css" href="../style/main.css">
 </head>
 <body>
-	<p class="menu">
-		<a class="button" href="../index.html">Главная</a>
-		<a class="button" href="products.html">Каталог</a>
-		<a class="button" href="../contacts.html">Контакты</a>
-	</p>
-	<h1 class="header">Каталог</h1>
-	<h3>Список товаров:</h3>
-	<table class="productTable">
-		<tr>
-			<th>
-				Для ценителей анимэ  - &laquo;Ван Хельсинг&raquo;
-			</th>
-			<th>
-				<img href="itemHelsing.html" src="../images/hellsing.jpg" alt="hellsing">
-			</th>
-			<th>
-				<a class="button" href="itemHelsing.html">подробнее</a>
-			</th>
-		</tr>
-			<tr>
-			<th>
-				Веселая картинка - &laquo;Как дела?&raquo;
-			</th>
-			<th>
-				<img href="itemFine.html" src="../images/fine.jpg" alt="fine">
-			</th>
-			<th>
-				<a class="button" href="itemFine.html">подробнее</a>
-			</th>
-		</tr>
-	</table>
-	<p class="footer">
+	<div class="menu">
+		<table>
+			<thead>
+				<tr>
+					<th><img src="../images/logo.png" alt="logo"></th> 
+					<th><a class="button" href="../index.html">Главная</a></th>
+					<th><a class="button" href="products.html">Каталог</a></th>
+					<th><a class="button" href="../contacts.html">Контакты</a></th>
+				</tr>
+			</thead>
+		</table>
+	</div>
+	<div>
+		<table class="productTable">
+			<thead class="tableHeader">
+				<tr>
+					<th colspan="3">Список товаров</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="productExtremeColumn">
+						Для ценителей анимэ  - &laquo;Ван Хельсинг&raquo;
+					</td>
+					<td>
+						<img href="itemHelsing.html" src="../images/hellsing.jpg" alt="hellsing">
+					</td>
+					<td class="productExtremeColumn">
+						<a class="button" href="itemHelsing.html">подробнее</a>
+					</td>
+				</tr>
+				<tr>
+					<td class="productExtremeColumn">
+						Веселая картинка - &laquo;Как дела?&raquo;
+					</td>
+					<td>
+						<img href="itemFine.html" src="../images/fine.jpg" alt="fine">
+					</td>
+					<td class="productExtremeColumn">
+						<a class="button" href="itemFine.html">подробнее</a>
+					</td>
+				</tr>
+			</tbody>
+			
+		</table>
+	</div>
+	<div class="footer">
 		Все права защищены <b>Copyright &copy; Sklyarenko Nataliya</b>, при содействии:
 		<a href="https:\\geekbrains.ru" target="_blank">GeekBrains</a>
-	</p>
+	</div>
 </body>
 </html>
